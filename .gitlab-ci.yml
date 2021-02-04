@@ -1,11 +1,11 @@
 stages:
   - build
 
-image: docker:19.03
+image: docker:20.10-git
 variables:
   DOCKER_TLS_CERTDIR: "/certs"
 services:
-  - docker:19.03-dind
+  - docker:20.10-dind
 
 build:
   stage: build
